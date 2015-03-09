@@ -1,13 +1,12 @@
 (ns proggly.core
   (:require [org.httpkit.client :as http])
   (:import [org.apache.log4j Level]
-           [org.apache.log4j.spi LoggingEvent]))
-
-(gen-class :name com.promotably.proggly.LogglyAppender
-           :extends org.apache.log4j.AppenderSkeleton
-           :state state
-           :init init
-           :methods [[logglyURL [String] void]])
+           [org.apache.log4j.spi LoggingEvent])
+  (:gen-class :name com.promotably.proggly.LogglyAppender
+              :extends org.apache.log4j.AppenderSkeleton
+              :state state
+              :init init
+              :methods [[logglyURL [String] void]]))
 
 (defn -init []
   [[] (atom {})])

@@ -1,4 +1,4 @@
-(defproject com.promotably/proggly "0.1.2"
+(defproject org.clojars.promotably/proggly "0.1.8"
   :description "Clojure Loggly Appender for Log4j"
   :url "http://github.com/promotably/proggly"
   :license {:name "Eclipse Public License"
